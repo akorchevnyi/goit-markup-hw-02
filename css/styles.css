@@ -22,18 +22,9 @@
 
 /* region normalizer*/
 
-html, body {
-    padding: 0;
-}
-
-img, svg {
-    display: block;
-}
-
 a {
     text-decoration: none;
     color: inherit;
-    font-style: normal;
 }
 
 ul {
@@ -43,21 +34,6 @@ ul {
 }
 
 /*endregion*/
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 
 body {
     font-family: var(--primary-font), sans-serif;
@@ -79,7 +55,7 @@ body {
 }
 
 .logo {
-    font-family: var(--second-font), sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -99,13 +75,18 @@ body {
 
 .nav-item:hover, .nav-item:focus,
 .header-contact:hover, .header-contact:focus {
-    color: var(--primary-brand-cl);
+    color: #404bbf;
+}
+
+.header-address {
+    font-style: normal
 }
 /*endregion*/
 
 /*region hero*/
 .hero {
     background-color: var(--dark-cl);
+    letter-spacing: 0.02em
 }
 
 .hero-header {
@@ -146,11 +127,32 @@ body {
     color: var(--dark-cl);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*endregion*/
 
 /*region team*/
 .team {
     background-color: var(--light-cl);
+}
+
+.team-header {
+    text-transform: capitalize
+}
+
+.team-item {
+    background-color: #FFFFFF
 }
 
 .team-name {
@@ -169,6 +171,10 @@ body {
 /*endregion*/
 
 /*region portfolio*/
+.portfolio-header {
+    text-transform: capitalize
+}
+
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
