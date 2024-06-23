@@ -29,7 +29,6 @@ a {
 
 ul {
     margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -74,7 +73,11 @@ body {
 }
 
 .nav-item:hover, .nav-item:focus,
-.header-contact:hover, .header-contact:focus {
+.header-contact:hover, .header-contact:focus  {
+    color: #404bbf;
+}
+
+.nav-item:active {
     color: #404bbf;
 }
 
@@ -86,7 +89,6 @@ body {
 /*region hero*/
 .hero {
     background-color: var(--dark-cl);
-    letter-spacing: 0.02em
 }
 
 .hero-header {
@@ -94,6 +96,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
     color: var(--light-text-cl);
 }
 
@@ -114,7 +117,7 @@ body {
 }
 
 .hero-btn:hover {
-    background-color: var(--pressed-cl);
+    background-color: #404BBF;
 }
 
 /*endregion*/
@@ -125,10 +128,11 @@ body {
     font-size: 20px;
     line-height: 1.20;
     color: var(--dark-cl);
+    letter-spacing: 0.02em;
 }
 
 .visually-hidden {
-    position: absolute;
+    /*position: absolute;*/
     width: 1px;
     height: 1px;
     margin: -1px;
