@@ -71,7 +71,7 @@ body {
 }
 
 .nav-link:hover, .nav-link:focus,
-.header-contact:hover, .header-contact:focus  {
+.address-link:hover, .address-link:focus  {
     color: #404bbf;
 }
 
@@ -114,7 +114,7 @@ body {
     color: var(--light-text-cl);
 }
 
-.hero-btn:hover, .hero-btn:active {
+.hero-btn:hover, .hero-btn:focus, .hero-btn:active {
     background-color: #404BBF;
 }
 
@@ -130,10 +130,8 @@ body {
 }
 
 .visually-hidden {
-    /*position: absolute;*/
     margin: -1px;
     border: 0;
-    padding: 0;
 
     white-space: nowrap;
     clip-path: inset(100%);
